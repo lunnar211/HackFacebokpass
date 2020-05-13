@@ -1,4 +1,4 @@
-# TOOLS INI DI BUAT OLEH Dipesh Karki
-# KALIAN BISA KUNJUNGI SOSMED KAMI ig pranata_pasha
-# TEAM InDoNeSiA CYBER ErRoR SySTem
-# Special Thanks to Technical Dipesh
+# THIS TOOL IS COODED BY Dipesh Karki
+# VISIT OUR CHANNEL TECHNICAL DIPESH
+# TEAM TECHNICAL DIPESH
+# Special Thanks to MR DIPESH KARKI
