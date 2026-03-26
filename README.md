@@ -4,14 +4,13 @@
 # COMMANDS FOR INSTALL PROCESS
 # apt update & upgrade
 # apt install git -y
-# apt install python -y
-# apt install python2 -y
+# apt install python3 -y
 # git clone https://github.com/lunnar211/HackFacebokpass
 # cd HackFacebokpass
 # ls
 # chmod +x *
 # ls
-# pip2 install requests
-# pip2 install mechanize
-# python2 SETAN.py
+# pip3 install requests
+# pip3 install mechanize
+# python3 SETAN.py
 # Special Thanks to MR DIPESH KARKI
