@@ -4,9 +4,7 @@ from multiprocessing.pool import ThreadPool
 
 from requests.exceptions import ConnectionError
 from mechanize import Browser
-import importlib
-importlib.reload(sys)
-sys.setdefaultencoding('utf8')
+
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
@@ -87,7 +85,7 @@ def login():
                 sig = 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail=' + id + 'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword=' + pwd + 'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
                 data = {'api_key': '882a8490361da98702bf97a021ddc14d', 'credentials_type': 'password', 'email': id, 'format': 'JSON', 'generate_machine_id': '1', 'generate_session_cookies': '1', 'locale': 'en_US', 'method': 'auth.login', 'password': pwd, 'return_ssl_resources': '0', 'v': '1.0'}
                 x = hashlib.new('md5')
-                x.update(sig)
+                x.update(sig.encode('utf-8'))
                 a = x.hexdigest()
                 data.update({'sig': a})
                 url = 'https://api.facebook.com/restserver.php'
